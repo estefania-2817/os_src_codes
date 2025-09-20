@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/modify_array.dir/src/main.c.o CMakeFiles/modify_array.dir/src/functions.c.o -o modify_array 

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/arguments_example.dir/src/main.c.o -o arguments_example 
