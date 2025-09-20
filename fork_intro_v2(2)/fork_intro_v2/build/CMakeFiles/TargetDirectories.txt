@@ -1,0 +1,3 @@
+/home/juan/class_examples/2025_F/complete/fork_intro/build/CMakeFiles/fork_intro.dir
+/home/juan/class_examples/2025_F/complete/fork_intro/build/CMakeFiles/edit_cache.dir
+/home/juan/class_examples/2025_F/complete/fork_intro/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+../include/functions.h:0:  No #ifndef header guard found, suggested CPP variable is: INCLUDE_FUNCTIONS_H_  [build/header_guard] [5]
+Done processing ../include/functions.h
+Done processing ../src/functions.c
+Done processing ../src/main.c
+Total errors found: 1

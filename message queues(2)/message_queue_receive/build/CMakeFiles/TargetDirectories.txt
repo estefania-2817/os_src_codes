@@ -1,0 +1,3 @@
+/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles/mq_receive.dir
+/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles/edit_cache.dir
+/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/sender.dir/src/main.c.o CMakeFiles/sender.dir/src/functions.c.o -o sender  -lm 

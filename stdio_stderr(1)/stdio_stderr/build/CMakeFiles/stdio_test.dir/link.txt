@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/stdio_test.dir/src/main.c.o -o stdio_test 

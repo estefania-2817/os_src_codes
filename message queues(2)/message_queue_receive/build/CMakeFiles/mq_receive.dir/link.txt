@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/mq_receive.dir/src/main.c.o CMakeFiles/mq_receive.dir/src/functions.c.o -o mq_receive  -lm 
