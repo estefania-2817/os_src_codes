@@ -9,7 +9,8 @@
 
 #include "functions.h"
 
-int main() {
+int main()
+{
   char in_array[100];
 
   printf("type a text: \n");

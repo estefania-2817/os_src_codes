@@ -1,5 +1,5 @@
 CMakeFiles/stdio_test.dir/src/main.c.o: \
- /home/juan/class_examples/2025_F/other/stdio_stderr/src/main.c \
+ /home/estefania2817/winhome/Downloads/OS/os_src_codes/stdio_stderr(1)/stdio_stderr/src/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -1,4 +1,4 @@
-# Install script for directory: /home/juan/class_examples/2025_F/other/stdio_stderr
+# Install script for directory: /home/estefania2817/winhome/Downloads/OS/os_src_codes/stdio_stderr(1)/stdio_stderr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/juan/class_examples/2025_F/other/stdio_stderr/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/estefania2817/winhome/Downloads/OS/os_src_codes/stdio_stderr(1)/stdio_stderr/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

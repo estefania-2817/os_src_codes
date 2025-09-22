@@ -3,12 +3,14 @@
 
 void PrintMessages();
 
-int main() {
+int main()
+{
   PrintMessages();
   return 0;
 }
 
-void PrintMessages() {
+void PrintMessages()
+{
   // Print a message to stdout
   printf("This  is the first message printed to stdout (standard output).");
 
