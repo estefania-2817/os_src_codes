@@ -1,0 +1,3 @@
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_v1(2)/shm_example/shm_reader/build/CMakeFiles/shm_reader.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_v1(2)/shm_example/shm_reader/build/CMakeFiles/edit_cache.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_v1(2)/shm_example/shm_reader/build/CMakeFiles/rebuild_cache.dir

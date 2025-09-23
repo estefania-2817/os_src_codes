@@ -1,0 +1,3 @@
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/signals(2)/signals/build/CMakeFiles/signals.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/signals(2)/signals/build/CMakeFiles/edit_cache.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/signals(2)/signals/build/CMakeFiles/rebuild_cache.dir

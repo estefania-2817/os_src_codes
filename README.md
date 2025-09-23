@@ -9,7 +9,7 @@ My notes from my study sessions
 * stdlib.h - standard library, EXIT_SUCCESS, EXIT_FAILURE, memory allocation
 * string.h - string handling
 * ctype.h - character handling (isalpha[to know if its a letter], toupper)
-* unistd.h - POSIX OS API (sleep(), file operations, fork, getpid, puase)
+* unistd.h - POSIX OS API (sleep(), file operations, fork, getpid, puase, ftruncate)
 * time.h - date and time
 * signal.h - signal handling (signal(), sigaction(), or signal interrupt 
   like crtl+C)
@@ -18,6 +18,7 @@ My notes from my study sessions
 * fcntl.h - file control, O_CREATE, OWRONLY
 * mqueue.h - POSIX message queue functions
 * sys/stat.h - file status, permissions
+* sys/mman.h - memory management (mmap, shm_open)
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * i
 
@@ -138,6 +139,33 @@ lab2 solution
 * &sa - "address of the sa structure"
 * NULL - "I don't care about the old handler, just install the new one"
 * getppid() - get parent process id
-* every time u call "kill(pid, USER) - calls the function from above from respective user to 
-  print the received signal and continue their process
+* every time u call "kill(pid, USER) - calls the function from above from  
+  respective user to print the received signal and continue their process
 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * i
+
+signals
+***couldnt print***
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * i
+
+shm v1
+* Producer-Consumer Pattern: One process creates/writes, another reads
+* Synchronization: The code shows the need for synchronization (the manual pause with getchar() is a crude form of synchronization)
+* shm_open() - creates/opens shared memory objects
+* mmap() - maps shared memory into process address space
+* shm_unlink() - removes shared memory object
+*  ftruncate(fd, 1024);  // Set size of shared memory to 1024 bytes
+* run writer first in one terminar, then reader in another terminal, if run reader first "mmap failed: Bad file descriptor"
+*  int fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
+* * * 1st param: name defined above
+* * * 2nd param: controls how the shared memory is opened
+* * * 3rd param: octal number fpr permissions
+* * * * 4 = read
+* * * * 2 = write
+* * * * 1 = execute
+* * * * 6 = read(4) + write(2)
+* * * * 0 = no permissions
+* * * 0600: Owner can read/write, group/others have no access 
+* * * 0644: Owner read/write, group/others read-only
+* * * 0666: Everyone can read/write (what we're using) 
