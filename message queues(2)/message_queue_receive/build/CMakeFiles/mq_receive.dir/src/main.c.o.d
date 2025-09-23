@@ -1,5 +1,5 @@
 CMakeFiles/mq_receive.dir/src/main.c.o: \
- /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c \
+ /home/estefania2817/winhome/Downloads/OS/os_src_codes/message\ queues(2)/message_queue_receive/src/main.c \
  /usr/include/stdc-predef.h /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

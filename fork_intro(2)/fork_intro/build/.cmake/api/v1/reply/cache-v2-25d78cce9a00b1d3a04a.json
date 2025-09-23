@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/juan/class_examples/2025_F/complete/fork_intro/build"
+			"value" : "/home/estefania2817/winhome/Downloads/OS/os_src_codes/fork_intro(2)/fork_intro/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -171,11 +171,27 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-13"
+			"value" : "/usr/bin/llvm-ar-18"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "`clang-scan-deps` dependency scanner"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,11 +203,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-13"
+			"value" : "/usr/bin/llvm-ranlib-18"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -547,7 +563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/juan/class_examples/2025_F/complete/fork_intro/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/estefania2817/winhome/Downloads/OS/os_src_codes/fork_intro(2)/fork_intro/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -607,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/juan/class_examples/2025_F/complete/fork_intro"
+			"value" : "/home/estefania2817/winhome/Downloads/OS/os_src_codes/fork_intro(2)/fork_intro"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1171,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/juan/class_examples/2025_F/complete/fork_intro/build"
+			"value" : "/home/estefania2817/winhome/Downloads/OS/os_src_codes/fork_intro(2)/fork_intro/build"
 		},
 		{
 			"name" : "fork_intro_IS_TOP_LEVEL",
@@ -1195,7 +1211,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/juan/class_examples/2025_F/complete/fork_intro"
+			"value" : "/home/estefania2817/winhome/Downloads/OS/os_src_codes/fork_intro(2)/fork_intro"
 		}
 	],
 	"kind" : "cache",

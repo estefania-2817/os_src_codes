@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/include
+C_INCLUDES = -I"/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/include"
 
 C_FLAGS = -std=gnu11
 

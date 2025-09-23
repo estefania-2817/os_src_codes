@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/functions.c" "CMakeFiles/mq_receive.dir/src/functions.c.o" "gcc" "CMakeFiles/mq_receive.dir/src/functions.c.o.d"
-  "/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c" "CMakeFiles/mq_receive.dir/src/main.c.o" "gcc" "CMakeFiles/mq_receive.dir/src/main.c.o.d"
+  "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/functions.c" "CMakeFiles/mq_receive.dir/src/functions.c.o" "gcc" "CMakeFiles/mq_receive.dir/src/functions.c.o.d"
+  "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/main.c" "CMakeFiles/mq_receive.dir/src/main.c.o" "gcc" "CMakeFiles/mq_receive.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

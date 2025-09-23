@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_receive
+CMAKE_SOURCE_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build
+CMAKE_BINARY_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/mq_receive.dir/clean
 CMakeFiles/mq_receive.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mq_receive.dir/build.make CMakeFiles/mq_receive.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mq_receive.dir/build.make CMakeFiles/mq_receive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles --progress-num=1,2,3 "Built target mq_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" --progress-num=1,2,3 "Built target mq_receive"
 .PHONY : CMakeFiles/mq_receive.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mq_receive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mq_receive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" 0
 .PHONY : CMakeFiles/mq_receive.dir/rule
 
 # Convenience name for target.

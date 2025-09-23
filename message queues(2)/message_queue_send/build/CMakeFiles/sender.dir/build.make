@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_send
+CMAKE_SOURCE_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_send/build
+CMAKE_BINARY_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sender.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/sender.dir/progress.make
 include CMakeFiles/sender.dir/flags.make
 
 CMakeFiles/sender.dir/src/main.c.o: CMakeFiles/sender.dir/flags.make
-CMakeFiles/sender.dir/src/main.c.o: /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/main.c
+CMakeFiles/sender.dir/src/main.c.o: /home/estefania2817/winhome/Downloads/OS/os_src_codes/message\ queues(2)/message_queue_send/src/main.c
 CMakeFiles/sender.dir/src/main.c.o: CMakeFiles/sender.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_send/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sender.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sender.dir/src/main.c.o -MF CMakeFiles/sender.dir/src/main.c.o.d -o CMakeFiles/sender.dir/src/main.c.o -c /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sender.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sender.dir/src/main.c.o -MF CMakeFiles/sender.dir/src/main.c.o.d -o CMakeFiles/sender.dir/src/main.c.o -c "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/main.c"
 
 CMakeFiles/sender.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sender.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/main.c > CMakeFiles/sender.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/main.c" > CMakeFiles/sender.dir/src/main.c.i
 
 CMakeFiles/sender.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sender.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/main.c -o CMakeFiles/sender.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/main.c" -o CMakeFiles/sender.dir/src/main.c.s
 
 CMakeFiles/sender.dir/src/functions.c.o: CMakeFiles/sender.dir/flags.make
-CMakeFiles/sender.dir/src/functions.c.o: /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/functions.c
+CMakeFiles/sender.dir/src/functions.c.o: /home/estefania2817/winhome/Downloads/OS/os_src_codes/message\ queues(2)/message_queue_send/src/functions.c
 CMakeFiles/sender.dir/src/functions.c.o: CMakeFiles/sender.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_send/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sender.dir/src/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sender.dir/src/functions.c.o -MF CMakeFiles/sender.dir/src/functions.c.o.d -o CMakeFiles/sender.dir/src/functions.c.o -c /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sender.dir/src/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sender.dir/src/functions.c.o -MF CMakeFiles/sender.dir/src/functions.c.o.d -o CMakeFiles/sender.dir/src/functions.c.o -c "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/functions.c"
 
 CMakeFiles/sender.dir/src/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sender.dir/src/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/functions.c > CMakeFiles/sender.dir/src/functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/functions.c" > CMakeFiles/sender.dir/src/functions.c.i
 
 CMakeFiles/sender.dir/src/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sender.dir/src/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/class_examples/2025_F/made_in_class/message_queue_send/src/functions.c -o CMakeFiles/sender.dir/src/functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/src/functions.c" -o CMakeFiles/sender.dir/src/functions.c.s
 
 # Object files for target sender
 sender_OBJECTS = \
@@ -109,7 +109,7 @@ sender: CMakeFiles/sender.dir/src/main.c.o
 sender: CMakeFiles/sender.dir/src/functions.c.o
 sender: CMakeFiles/sender.dir/build.make
 sender: CMakeFiles/sender.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_send/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sender"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sender"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sender.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/sender.dir/clean:
 .PHONY : CMakeFiles/sender.dir/clean
 
 CMakeFiles/sender.dir/depend:
-	cd /home/juan/class_examples/2025_F/made_in_class/message_queue_send/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/class_examples/2025_F/made_in_class/message_queue_send /home/juan/class_examples/2025_F/made_in_class/message_queue_send /home/juan/class_examples/2025_F/made_in_class/message_queue_send/build /home/juan/class_examples/2025_F/made_in_class/message_queue_send/build /home/juan/class_examples/2025_F/made_in_class/message_queue_send/build/CMakeFiles/sender.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_send/build/CMakeFiles/sender.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/sender.dir/depend
 

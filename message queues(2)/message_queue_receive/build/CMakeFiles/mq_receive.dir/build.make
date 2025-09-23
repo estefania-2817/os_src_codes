@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_receive
+CMAKE_SOURCE_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build
+CMAKE_BINARY_DIR = "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mq_receive.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/mq_receive.dir/progress.make
 include CMakeFiles/mq_receive.dir/flags.make
 
 CMakeFiles/mq_receive.dir/src/main.c.o: CMakeFiles/mq_receive.dir/flags.make
-CMakeFiles/mq_receive.dir/src/main.c.o: /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c
+CMakeFiles/mq_receive.dir/src/main.c.o: /home/estefania2817/winhome/Downloads/OS/os_src_codes/message\ queues(2)/message_queue_receive/src/main.c
 CMakeFiles/mq_receive.dir/src/main.c.o: CMakeFiles/mq_receive.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mq_receive.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mq_receive.dir/src/main.c.o -MF CMakeFiles/mq_receive.dir/src/main.c.o.d -o CMakeFiles/mq_receive.dir/src/main.c.o -c /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mq_receive.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mq_receive.dir/src/main.c.o -MF CMakeFiles/mq_receive.dir/src/main.c.o.d -o CMakeFiles/mq_receive.dir/src/main.c.o -c "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/main.c"
 
 CMakeFiles/mq_receive.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mq_receive.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c > CMakeFiles/mq_receive.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/main.c" > CMakeFiles/mq_receive.dir/src/main.c.i
 
 CMakeFiles/mq_receive.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mq_receive.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/main.c -o CMakeFiles/mq_receive.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/main.c" -o CMakeFiles/mq_receive.dir/src/main.c.s
 
 CMakeFiles/mq_receive.dir/src/functions.c.o: CMakeFiles/mq_receive.dir/flags.make
-CMakeFiles/mq_receive.dir/src/functions.c.o: /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/functions.c
+CMakeFiles/mq_receive.dir/src/functions.c.o: /home/estefania2817/winhome/Downloads/OS/os_src_codes/message\ queues(2)/message_queue_receive/src/functions.c
 CMakeFiles/mq_receive.dir/src/functions.c.o: CMakeFiles/mq_receive.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mq_receive.dir/src/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mq_receive.dir/src/functions.c.o -MF CMakeFiles/mq_receive.dir/src/functions.c.o.d -o CMakeFiles/mq_receive.dir/src/functions.c.o -c /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mq_receive.dir/src/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mq_receive.dir/src/functions.c.o -MF CMakeFiles/mq_receive.dir/src/functions.c.o.d -o CMakeFiles/mq_receive.dir/src/functions.c.o -c "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/functions.c"
 
 CMakeFiles/mq_receive.dir/src/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mq_receive.dir/src/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/functions.c > CMakeFiles/mq_receive.dir/src/functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/functions.c" > CMakeFiles/mq_receive.dir/src/functions.c.i
 
 CMakeFiles/mq_receive.dir/src/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mq_receive.dir/src/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/src/functions.c -o CMakeFiles/mq_receive.dir/src/functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/src/functions.c" -o CMakeFiles/mq_receive.dir/src/functions.c.s
 
 # Object files for target mq_receive
 mq_receive_OBJECTS = \
@@ -109,7 +109,7 @@ mq_receive: CMakeFiles/mq_receive.dir/src/main.c.o
 mq_receive: CMakeFiles/mq_receive.dir/src/functions.c.o
 mq_receive: CMakeFiles/mq_receive.dir/build.make
 mq_receive: CMakeFiles/mq_receive.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable mq_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable mq_receive"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mq_receive.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/mq_receive.dir/clean:
 .PHONY : CMakeFiles/mq_receive.dir/clean
 
 CMakeFiles/mq_receive.dir/depend:
-	cd /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/class_examples/2025_F/made_in_class/message_queue_receive /home/juan/class_examples/2025_F/made_in_class/message_queue_receive /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build /home/juan/class_examples/2025_F/made_in_class/message_queue_receive/build/CMakeFiles/mq_receive.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build" "/home/estefania2817/winhome/Downloads/OS/os_src_codes/message queues(2)/message_queue_receive/build/CMakeFiles/mq_receive.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/mq_receive.dir/depend
 
