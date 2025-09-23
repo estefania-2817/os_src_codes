@@ -9,7 +9,7 @@ My notes from my study sessions
 * stdlib.h - standard library, EXIT_SUCCESS, EXIT_FAILURE, memory allocation
 * string.h - string handling
 * ctype.h - character handling (isalpha[to know if its a letter], toupper)
-* unistd.h - POSIX OS API (sleep(), file operations, fork, getpid)
+* unistd.h - POSIX OS API (sleep(), file operations, fork, getpid, puase)
 * time.h - date and time
 * signal.h - signal handling (signal(), sigaction(), or signal interrupt 
   like crtl+C)
@@ -80,8 +80,8 @@ fork_intro
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * i
 
 fork_intro_v2
-* execlp() replaces the current process's memory space with a new program, 
-  if successful, the child process becomes "htop" completely
+* execlp() replaces the current process's memory space with a 
+  new program, if successful, the child process becomes "htop" completely
 * wait(NULL) makes the parent pause until the child terminates 
 * * This prevents "zombie processes" (completed processes whose 
     parents haven't waited for them)
@@ -113,7 +113,31 @@ message queues
                 8192,         // Message size (using full buffer size)
                 0);           // Priority (0 = normal)
 * DIFFERENCE between snprintf and printf
-* * printf - sends formatted output directly to the standard output 
-    (usually the terminal)
-* * snprintf - formats a string into a buffer with size protection
-    in this case "char message[8192]" us the buffer for the message
+* * printf - sends formatted output directly to the standard 
+    output (usually the terminal)
+* * snprintf - formats a string into a buffer with size 
+    protection in this case "char message[8192]" us the buffer for the message
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * i
+
+lab2 solution
+* SIGUSR1 and SIGUSR2 are user-defined signals 
+  (not used by system)
+* pid_t - special type for process IDs
+* struct sigaction sa configures how to handle signals
+* sigaction(SIGUSR1, &sa, NULL) means: "When SIGUSR1 arrives, 
+  call ActorHandler"
+* pause() puts the process to sleep until any signal arrives
+* * The Actor waits indefinitely for the Director's 
+    signal (SIGUSR1)
+* struct sigaction sa - configures how to handle signals
+* sigaction(SIGUSR1, &sa, NULL): 
+  "When SIGUSR1 arrives, call ActorHandler"
+* * * * sleep() - pauses execution for a specific amount of time
+* * * * pause() - waits indefinitely until ANY signal arrives.
+* &sa - "address of the sa structure"
+* NULL - "I don't care about the old handler, just install the new one"
+* getppid() - get parent process id
+* every time u call "kill(pid, USER) - calls the function from above from respective user to 
+  print the received signal and continue their process
+
