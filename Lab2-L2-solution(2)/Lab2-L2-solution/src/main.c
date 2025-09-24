@@ -44,9 +44,9 @@ int main() {
     kill(getppid(), SIGUSR2);  // NOT TYPO, get parent process id (ppid)
   } else {
     // director code
-    struct sigaction sa;
-    sa.sa_handler = DirectorHandler;  // DirectorHandler function from above
-    sigaction(SIGUSR2, &sa, NULL);
+    struct sigaction sa;  // configuration structure
+    sa.sa_handler = DirectorHandler;  // calls DirectorHandler function from above
+    sigaction(SIGUSR2, &sa, NULL); // register handler for SIGUSR2 signal
 
     sleep(1);
     printf("Director (PID: %d): I'll send SIGUSR1 to the actor to start\n",
