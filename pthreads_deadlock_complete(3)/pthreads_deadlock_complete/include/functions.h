@@ -1,0 +1,1 @@
+void ModifyArray(char *array);
