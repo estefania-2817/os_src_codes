@@ -16,7 +16,7 @@
 void* HeavyCpuTask(void* arg);
 
 #define MATRIX_SIZE 300
-#define NUM_ITERATIONS 500
+#define NUM_ITERATIONS 100 //500 initially by professor
 
 int counter = 0;
 
@@ -32,7 +32,8 @@ int main() {
   struct sched_param param;
   pthread_attr_init(&attr);
   pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
-  pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
+  // pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
+  pthread_attr_setschedpolicy(&attr, SCHED_OTHER);
   param.sched_priority = 16;
   pthread_attr_setschedparam(&attr, &param);
 
@@ -41,7 +42,9 @@ int main() {
 
   pthread_attr_init(&attr);
   pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
-  pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
+  // pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
+  pthread_attr_setschedpolicy(&attr, SCHED_OTHER);
+
   param.sched_priority = 16;
   pthread_attr_setschedparam(&attr, &param);
 
@@ -75,22 +78,22 @@ void* HeavyCpuTask(void* arg) {
     pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
     // Set nice value to 0
-    // if (setpriority(PRIO_PROCESS, 0, 10) != 0) {
-    //   fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
-    //           strerror(errno));
-    // }
+    if (setpriority(PRIO_PROCESS, 0, 10) != 0) {
+      fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
+              strerror(errno));
+    }
   } else {
     // Set CPU
-    // cpu_set_t cpuset;
-    // CPU_ZERO(&cpuset);
-    // CPU_SET(8, &cpuset);
-    // pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
+    cpu_set_t cpuset;
+    CPU_ZERO(&cpuset);
+    CPU_SET(8, &cpuset);
+    pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
     // Set nice value to 19
-    // if (setpriority(PRIO_PROCESS, 0, 15) != 0) {
-    //   fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
-    //           strerror(errno));
-    // }
+    if (setpriority(PRIO_PROCESS, 0, 15) != 0) {
+      fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
+              strerror(errno));
+    }
   }
 
   // Allocate memory for matrices A, B, and result C

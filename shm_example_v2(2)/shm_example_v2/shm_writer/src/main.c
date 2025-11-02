@@ -6,15 +6,17 @@
 #include <unistd.h>
 
 #define SHM_NAME "/shm_example"
-#define N_ELEM 45
-#define BLOCK_SIZE N_ELEM * sizeof(float)
+#define N_ELEM 45  // number of elements in array
+#define BLOCK_SIZE N_ELEM * sizeof(float) // total memory size needed
 
 int main() {
   // Create block
-  int fd = shm_open(SHM_NAME, O_RDWR, 0666);
-  ftruncate(fd, BLOCK_SIZE);
+  int fd = shm_open(SHM_NAME, O_RDWR, 0666);  //Opens an existing shared memory object with read-write access
+  ftruncate(fd, BLOCK_SIZE); // Sets the size of the shared memory object to BLOCK_SIZE
+
   float *array_mmap =
       mmap(0, BLOCK_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+      // Maps the shared memory into the process's address space
 
   if (array_mmap == MAP_FAILED) {
     perror("mmap failed");
@@ -23,7 +25,7 @@ int main() {
   // write data
   for (int i = 0; i < N_ELEM; i++) {
     array_mmap[i] = i * 0.2;
-  }
+  } // Fills the shared memory with values: 0.0, 0.2, 0.4, 0.6, etc.
 
   return 0;
 }

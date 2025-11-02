@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/scheduling_real_time.dir/src/main.c.o -o scheduling_real_time  -lm 

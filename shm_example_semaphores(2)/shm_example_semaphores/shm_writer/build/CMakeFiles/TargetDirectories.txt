@@ -1,0 +1,3 @@
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_semaphores(2)/shm_example_semaphores/shm_writer/build/CMakeFiles/shm_writer.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_semaphores(2)/shm_example_semaphores/shm_writer/build/CMakeFiles/edit_cache.dir
+/home/estefania2817/winhome/Downloads/OS/os_src_codes/shm_example_semaphores(2)/shm_example_semaphores/shm_writer/build/CMakeFiles/rebuild_cache.dir

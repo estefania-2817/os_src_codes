@@ -17,7 +17,7 @@ int main()
   attr.mq_curmsgs = 0;    // Current messages in queue (initialized to 0)
   // mq_unlink("/robert_queue");
 
-  // conectarse al queue
+  // conectarse al queue     // en vez de &attr poner null, te pone los defaut values
   mqd_t queue_os;                                                       // declare message queue descriptor                                                   // Declare message queue descriptor
   queue_os = mq_open("/robert_queue", O_CREAT | O_RDONLY, 0644, &attr); // create queue(if doesnt exist), READ only
   if (queue_os == -1)                                                   // check if error in creating queue
@@ -32,6 +32,10 @@ int main()
 
   printf("voy a leer el mq\n");
   mq_receive(queue_os, buffer, 8192, &priority);
+    // queue_os - The message queue descriptor returned by mq_open()
+    // buffer - The character array where the received message will be stored
+    // 8192 - The size of your buffer (must be ≥ the queue's mq_msgsize)
+    // &priority - Pointer to an integer that will receive the message's priority
 
   printf("the received message is %s\n", buffer);
 
