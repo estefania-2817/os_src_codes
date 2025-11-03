@@ -1,5 +1,4 @@
 #define _GNU_SOURCE
-
 #include <errno.h>
 #include <math.h>
 #include <pthread.h>
@@ -13,42 +12,41 @@
 #include <time.h>
 #include <unistd.h>
 
-void* HeavyCpuTask(void* arg);
+void* HeavyCpuTask(void* arg); // Function prototype for the thread function
 
 #define MATRIX_SIZE 300
 #define NUM_ITERATIONS 100 //500 initially by professor
 
-int counter = 0;
+int counter = 0; // not used
 
 int main() {
-  srand(time(NULL));
+  srand(time(NULL)); // Seeds random number generator with current time
 
-  pthread_t thread1, thread2;
+  pthread_t thread1, thread2; // Declares thread handles
 
   // Create the thread, passing the nice value as argument
   int ids[2] = {1, 2};
 
   pthread_attr_t attr;
   struct sched_param param;
-  pthread_attr_init(&attr);
+  pthread_attr_init(&attr); //config for thread 1
   pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
   // pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
   pthread_attr_setschedpolicy(&attr, SCHED_OTHER);
-  param.sched_priority = 16;
+  param.sched_priority = 16; // for SCHED_OTHER, priority must be 0??
   pthread_attr_setschedparam(&attr, &param);
 
-  pthread_create(&thread1, &attr, HeavyCpuTask, &ids[0]);
+  pthread_create(&thread1, &attr, HeavyCpuTask, &ids[0]); //add id at end
   printf("Created thread 1\n");
 
-  pthread_attr_init(&attr);
+  pthread_attr_init(&attr); //config for thread 2
   pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
   // pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
   pthread_attr_setschedpolicy(&attr, SCHED_OTHER);
-
-  param.sched_priority = 16;
+  param.sched_priority = 16; // for SCHED_OTHER, priority must be 0??
   pthread_attr_setschedparam(&attr, &param);
 
-  pthread_create(&thread2, &attr, HeavyCpuTask, &ids[1]);
+  pthread_create(&thread2, &attr, HeavyCpuTask, &ids[1]); //add id at end
   printf("Created thread 2\n");
 
   // Wait for the thread to complete
@@ -64,32 +62,32 @@ int main() {
  * @return NULL.
  */
 void* HeavyCpuTask(void* arg) {
-  struct timespec start, end;
+  struct timespec start, end; // timing vars
 
-  int* id = (int*)arg;
+  int* id = (int*)arg; // thread id arg 
   float total_time = 0.0;
 
   if (*id == 1) {
-    // Set CPU
+    // Set CPU: Sets CPU affinity to cores 8 and 13 (pins thread to specific CPUs)
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
     CPU_SET(8, &cpuset);
     CPU_SET(13, &cpuset);
     pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
-    // Set nice value to 0
+    // Sets nice value to 10 (lower priority, higher nice value)
     if (setpriority(PRIO_PROCESS, 0, 10) != 0) {
       fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
               strerror(errno));
     }
   } else {
-    // Set CPU
+    // Set CPU: Sets CPU affinity to only core 8
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
     CPU_SET(8, &cpuset);
     pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
-    // Set nice value to 19
+    // Sets nice value to 15 (even lower priority)
     if (setpriority(PRIO_PROCESS, 0, 15) != 0) {
       fprintf(stderr, "Thread %d: Failed to set nice value: %s\n", *id,
               strerror(errno));
@@ -97,6 +95,7 @@ void* HeavyCpuTask(void* arg) {
   }
 
   // Allocate memory for matrices A, B, and result C
+  // Allocates memory for three 300×300 matrices using pointer-to-array syntax
   double (*A)[MATRIX_SIZE] = malloc(sizeof(double[MATRIX_SIZE][MATRIX_SIZE]));
   double (*B)[MATRIX_SIZE] = malloc(sizeof(double[MATRIX_SIZE][MATRIX_SIZE]));
   double (*C)[MATRIX_SIZE] = malloc(sizeof(double[MATRIX_SIZE][MATRIX_SIZE]));
@@ -123,8 +122,8 @@ void* HeavyCpuTask(void* arg) {
     for (int i = 0; i < MATRIX_SIZE; i++) {
       for (int j = 0; j < MATRIX_SIZE; j++) {
         for (int k = 0; k < MATRIX_SIZE; k++) {
-          C[i][j] += A[i][k] * B[k][j];
-        }
+          C[i][j] += A[i][k] * B[k][j]; // += bc value is 0 and u add result
+        } // Performs O(n³) matrix multiplication (CPU-intensive)
       }
     }
 
@@ -141,6 +140,7 @@ void* HeavyCpuTask(void* arg) {
 
     // Calculate a simple checksum (to ensure computation wasn't optimized away)
     double checksum = C[MATRIX_SIZE / 2][MATRIX_SIZE / 2];
+    // Gets current CPU core and calculates checksum (to prevent optimization)
 
     // --- STUDENT LOG OUTPUT (REQUIRED FORMAT) ---
     // The student must print the final result log in this exact format.
