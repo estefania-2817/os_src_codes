@@ -10,7 +10,7 @@
 #define MAX_TICKETS 100
 
 typedef struct {
-  pthread_mutex_t mutex;
+  pthread_mutex_t mutex; //synchronization
   int available_tickets;
   int transactions;
   int purchase_log[MAX_TICKETS];
@@ -24,18 +24,19 @@ int main() {
 
   ftruncate(shm_fd, sizeof(shared_data));
 
+  //preferred addr, mapping length, read & write, map type-shared, file descriptor-fd, offset-where in file start mapping
   data = mmap(NULL, sizeof(shared_data), PROT_READ | PROT_WRITE, MAP_SHARED,
               shm_fd, 0);
 
-  // shared memory
+  // shared memory mutex initialization
   pthread_mutexattr_t attr;
   pthread_mutexattr_init(&attr);
-  pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_SHARED);
-  pthread_mutex_init(&data->mutex, &attr);
+  pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_SHARED); // allows mutex to work across processes
+  pthread_mutex_init(&data->mutex, &attr); //Initialize the mutex in shared memory with process-shared attribute
 
   data->available_tickets = 100;
   data->transactions = 0;
-  memset(data->purchase_log, 0, sizeof(data->purchase_log));
+  memset(data->purchase_log, 0, sizeof(data->purchase_log)); // Initialize all purchase log entries to 0
 
   printf("TICKET REPORT:\nAvailable tickets: %d\n\n", data->available_tickets);
 
@@ -43,7 +44,7 @@ int main() {
   while (1) {
     sleep(1);
 
-    pthread_mutex_lock(&data->mutex);
+    pthread_mutex_lock(&data->mutex); // Lock mutex before accessing shared data
     printf("TICKET REPORT:\n");
     printf("Available tickets: %d\n", data->available_tickets);
 
