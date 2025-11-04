@@ -1,0 +1,4 @@
+../src/main.c: In function ‘main’:
+../src/main.c:19:3: warning: ignoring return value of ‘fscanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   19 |   fscanf(file, "%lf %lf", &uptime, &idle_time);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

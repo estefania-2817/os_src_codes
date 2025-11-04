@@ -1,0 +1,6 @@
+--- System Activity Analysis ---
+Detected CPU Cores: 28
+Total Uptime: 0 days, 0 hours, 23 minutes, 30 seconds
+Idle Time (Sum of Cores): 38846.84 seconds
+Global CPU Utilization Percentage: 1.66 %
+---

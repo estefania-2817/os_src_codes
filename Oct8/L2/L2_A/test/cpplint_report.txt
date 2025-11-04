@@ -1,0 +1,4 @@
+../src/main.c:10:  Use int16_t/int64_t/etc, rather than the C type long  [runtime/int] [4]
+../src/main.c:11:  Use int16_t/int64_t/etc, rather than the C type long  [runtime/int] [4]
+Done processing ../src/main.c
+Total errors found: 2

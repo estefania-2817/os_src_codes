@@ -1,0 +1,6 @@
+Done processing ../buyer/include/functions.h
+Done processing ../buyer/src/functions.c
+Done processing ../buyer/src/main.c
+Done processing ../ticket_office/include/functions.h
+Done processing ../ticket_office/src/functions.c
+Done processing ../ticket_office/src/main.c

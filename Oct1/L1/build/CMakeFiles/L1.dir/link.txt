@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/L1.dir/src/main.c.o -o L1  -lm 

@@ -1,0 +1,5 @@
+../src/functions.c:121:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+Done processing ../include/functions.h
+Done processing ../src/functions.c
+Done processing ../src/main.c
+Total errors found: 1
