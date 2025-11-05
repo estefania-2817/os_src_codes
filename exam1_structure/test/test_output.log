@@ -1,0 +1,23 @@
+Data Logger (PID: 2389) is running. Waiting for messages.
+Data Creator (PID: 2388) is running.
+Shared memory block '/mem_block_exam_1' created.
+Data Creator: Writing new data to shared memory...
+Data Creator: Writing new data to shared memory...
+Data Creator: Writing new data to shared memory...
+Data Creator: Writing new data to shared memory...
+Data Creator: Writing new data to shared memory...
+Data Logger is finished.
+SHM and message queue created successfully
+Process creator PID: 2388
+Process logger  PID: 2389
+Data Processor: new data available
+Data Processor: new data available
+Data Processor: new data available
+Data Processor: new data available
+Data Processor: new data available
+SHM block deleted
+Received average: 5.500000
+Received average: 15.500000
+Received average: 25.500000
+Received average: 35.500000
+Received average: 45.500000

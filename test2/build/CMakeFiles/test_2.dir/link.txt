@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_2.dir/src/main.c.o -o test_2  -lm 

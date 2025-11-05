@@ -1,0 +1,3 @@
+/home/estefania2817/winhome/Downloads/repaso_exam_2/repaso_exam_2/build/CMakeFiles/repaso_exam_2.dir
+/home/estefania2817/winhome/Downloads/repaso_exam_2/repaso_exam_2/build/CMakeFiles/edit_cache.dir
+/home/estefania2817/winhome/Downloads/repaso_exam_2/repaso_exam_2/build/CMakeFiles/rebuild_cache.dir
